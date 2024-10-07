@@ -342,9 +342,12 @@ button:hover {
 
 /*--------------------------------------- */
 /* MAIN PAGE VİTRİN - GRID İLE*/
-.vitrin{
+.favorite{
   display: grid;
   justify-items: center;
+}
+.secondary-title {
+  color: #CE2829;
 }
 .secondary-nav {
   height: 100px;
@@ -377,27 +380,27 @@ button:hover {
   height: 40px; 
   margin-right: 5px;
 }
-.vitrin-card-container{
+.favorite-card-container{
   background-color: white;
   padding: 20px;
   border-radius: 20px;
   margin: 50px;
 }
-.vitrin-card-container p{
+.favorite-card-container p{
   display: flex;
   justify-content: space-between;
   font-size: 16px;
   font-weight: 400;
 }
-.vitrin-card-container p:last-child{
+.favorite-card-container p:last-child{
   font-size: 18px;
   font-weight: 600;
 }
-.vitrin-card-container h4{
+.favorite-card-container h4{
   font-size: 22px;
   font-weight: 600;
 }
-.vitrin-cards {
+.favorite-cards {
   display: flex;
   justify-content: space-around;
 }
