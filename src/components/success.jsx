@@ -1,7 +1,8 @@
-/* siparis alindi basarili sayfasi*/  
-import LogoSVG  from "../../Assets/Iteration-1-assets/logo.svg";
+/* siparis alindi basarili sayfasi*/
+import LogoSVG from "../../Assets/Iteration-1-assets/logo.svg";
 import { useHistory } from 'react-router-dom';
 import React from 'react';
+import { Alert } from 'reactstrap';
 
 
 export default function Success({ orderData }) {
@@ -13,7 +14,9 @@ export default function Success({ orderData }) {
 
     /* orderData geliyor mu */
     if (!orderData) {
-        return <p>Sipariş verileri eksik veya hatalı.</p>;
+        return (
+            <Alert fade={false} color="danger">Sipariş verileri eksik veya hatalı</Alert>
+        )
     } else {
         console.log("SUCCESS DATA:", orderData);
     }
@@ -42,9 +45,9 @@ export default function Success({ orderData }) {
                     </section>
                 </section>
                 <section className='siparis-odeme-info'>
-                        <h2>Sipariş Toplamı</h2>
-                        <div><p>Seçimler</p>  <p>{malzemeler.length * 5} ₺</p></div>
-                        <div><p>Toplam</p>  <p>{(85.5 * miktar) + (malzemeler.length * miktar)} ₺</p></div>
+                    <h2>Sipariş Toplamı</h2>
+                    <div><p>Seçimler</p>  <p>{malzemeler.length * 5} ₺</p></div>
+                    <div><p>Toplam</p>  <p>{(85.5 * miktar) + (malzemeler.length * miktar)} ₺</p></div>
                 </section>
                 <button id='success-buton' onClick={handleButton}>Anasayfaya Dön</button>
             </main>
