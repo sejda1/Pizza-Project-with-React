@@ -19,7 +19,7 @@ function App() {
         <Route exact path="/"  >
           <MainPage />
         </Route>
-        <Route path="/siparis-olustur"  >
+        <Route path="/siparis-olustur" >
           <OrderPizza onSubmit={handleOrderData}/>
         </Route>
         <Route path="/siparis-alindi">
