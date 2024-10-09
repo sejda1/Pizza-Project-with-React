@@ -77,12 +77,14 @@ const validateForm = () => {
 
   setErrors(newErrors);
 
-  /* newErrors'un value değerleri boş mu diye bakıp butona basılabilir mi belirleyen kısım*/
+  /* newErrors'un value değerleri boş mu diye bakıp butona basılabilir mi belirleyen kısım.   
+  Object.values(newErrors) ifadesi bu objenin value'larini alır ve bir array'e dönüştürür every ile her elemana bakar ve hepsi 
+  bossa fonksiyon true doner, degilse false doner*/
   const isValidForm = Object.values(newErrors).every((e) => e === "");
   setIsValid(isValidForm);
 };
 
-/* formu guncelleyen fonksiyon */
+/* hangi form alaninin degistigiyle ilgili bilgi aliriz. */
 const handleChange = (event) => {
     let { name, value, type, checked } = event.target;
     

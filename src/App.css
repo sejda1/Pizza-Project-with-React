@@ -235,12 +235,85 @@ button:hover {
   font-weight: 100;
   display: flex;
   justify-content: center;
+  
 }
 .secondary-title{
   font-family: Satisfy;
   color: #FDC913;
   font-size: 32px;
 }
+
+/* SUCCESS PAGE */
+.success-page{
+  background-color: #CE2829;
+  color: white;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.success-page img {
+ margin: 56px;
+}
+.siparis-alindi{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  border-bottom: 1px solid white;
+}
+.siparis-alindi-info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 50px;
+  max-width: 400px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid white;
+}
+.siparis-alindi-info h2:first-child{
+  margin-bottom: 100px;
+  font-size: 22px;
+}
+.siparis-form-info{
+  display: flex;
+  flex-direction: column;
+}
+.siparis-form-info div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.siparis-form-info p:nth-child(even) {
+  font-weight: 700;
+  margin-left: 10px;
+}
+.siparis-form-info p:nth-child(odd) {
+  margin-left: 80px;
+  font-weight: 400;
+}
+
+.siparis-odeme-info{
+  margin: 50px 0px;
+  max-width: 700px;
+  padding: 50px;
+  border-radius: 4px;
+  border: 1px solid white;
+  color:white;
+  background-color: #CE2829;
+  font-size: 18px;
+}
+.siparis-odeme-info div{
+  display: flex;
+  justify-content: space-between;
+}
+.siparis-odeme-info h2{
+  margin-bottom: 40px;
+}
+
+/*--------------------------------------- */
 /* MAIN PAGE */
 .main-nav {
   width: 100%;
@@ -342,12 +415,9 @@ button:hover {
 
 /*--------------------------------------- */
 /* MAIN PAGE VİTRİN - GRID İLE*/
-.favorite{
+.vitrin{
   display: grid;
   justify-items: center;
-}
-.secondary-title {
-  color: #CE2829;
 }
 .secondary-nav {
   height: 100px;
@@ -380,27 +450,60 @@ button:hover {
   height: 40px; 
   margin-right: 5px;
 }
-.favorite-card-container{
+.vitrin-card-container{
   background-color: white;
   padding: 20px;
   border-radius: 20px;
   margin: 50px;
 }
-.favorite-card-container p{
+.vitrin-card-container p{
   display: flex;
   justify-content: space-between;
   font-size: 16px;
   font-weight: 400;
 }
-.favorite-card-container p:last-child{
+.vitrin-card-container p:last-child{
   font-size: 18px;
   font-weight: 600;
 }
-.favorite-card-container h4{
+.vitrin-card-container h4{
   font-size: 22px;
   font-weight: 600;
 }
-.favorite-cards {
+.vitrin-cards {
   display: flex;
   justify-content: space-around;
+}
+
+/*--------------------------------------- */
+/* MAIN FOOTER*/
+
+footer {
+  background-color: #1A1A1A;
+  height: 500px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+footer div{
+  margin-top: 50px;
+}
+footer ul {
+  padding: 10px;
+  list-style-type: none;
+}
+footer li{
+  text-decoration: none;
+}
+.secondary-footer{
+  height: 100px;
+  border-top: 1px solid white;
+  justify-content: flex-start;
+  align-items: center;
+}
+.secondary-footer p{
+  margin-left: 50px;
+}
+footer img{
+  padding: 5px;
 }
